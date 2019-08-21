@@ -5,7 +5,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         name="quickstart">
     <fileSets>
-        <fileSet filtered="true" packaged="true">
+        <fileSet filtered="true">
             <directory>src/main/java/</directory>
         </fileSet>
         <fileSet>
