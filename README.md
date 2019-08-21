@@ -18,7 +18,9 @@ To install this plugin, clone the repository and use `mvn` to install it:
 Once installed, create a new project using the following command line:
 
 ```
-mvn archetype:generate -DgroupId=com.demo -DartifactId=DemoProject -DarchetypeArtifactId=burp-extension -DarchetypeGroupId=com.securityevaluators -DinteractiveMode=false
+mvn archetype:generate -DarchetypeArtifactId=burp-extension \
+    -DarchetypeGroupId=com.securityevaluators -DinteractiveMode=false \
+    -DgroupId=com.demo -DartifactId=DemoProject 
 ```
 
 Replace `com.demo` with your organization's namespace, and `DemoProject` with your desired project name. Maven will then create the project structure for you, including a template extension source file. 
