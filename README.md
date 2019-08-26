@@ -33,4 +33,4 @@ IntelliJ can create projects based on Maven archetypes. To do so, first install 
 
 The first time you create a project, you will have to make IntelliJ aware of it. Click the `Add Archetype...` button. Enter `com.securityevaluators` for the GroupId, `burp-extension` for the ArtifactId, and `1.0` for the version. Leave `Repository` blank, and click `OK`. 
 
-After that, you can simply select `com.securityevaluators:burp-extension` from the archetype list and follow the prompts to create your extension project. You will also need to create an IntelliJ artifact to have IntelliJ build the .jar files for you. 
+After that, you can simply select `com.securityevaluators:burp-extension` from the archetype list and follow the prompts to create your extension project. You will also need to create an IntelliJ artifact to have IntelliJ build the .jar files for you. You can find the option to do so under `Open Module Settings -> Artifacts`, and the correct .jar type is `Jar -> From modules with dependencies` (default options). I also recommend checking the `Include in project build` check box so you don't have to manually rebuild the .jar file every time you make a change.
